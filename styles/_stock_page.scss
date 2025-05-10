@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-// Подключение шрифтов
 @font-face {
   font-family: "GothamPro_black";
   src: url("../fonts/gothampro_black.ttf") format("truetype");
@@ -16,7 +15,6 @@
   src: url("../fonts/gothampro_bold.ttf") format("truetype");
 }
 
-// Переменные
 $bg: #111;
 $card-bg: #222;
 $text: #fff;
@@ -27,7 +25,6 @@ $container-width: 90%;
 $max-container-width: 1200px;
 $shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-// Глобальные стили
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,14 +45,12 @@ body {
   color: var(--text);
 }
 
-// Стили для контейнера
 .container {
   width: $container-width;
   max-width: $max-container-width;
   margin: 0 auto;
 }
 
-// Стили для хедера
 .header {
   background: linear-gradient(
     135deg,
@@ -82,7 +77,6 @@ body {
   }
 }
 
-// Стили для логотипа и навигации
 .logo,
 .brand-logo {
   font-family: "GothamPro_black", sans-serif;
@@ -111,14 +105,12 @@ body {
   }
 }
 
-// Стили для секций
 section {
   margin-left: auto;
   margin-right: auto;
   width: 1180px;
 }
 
-// Стили для популярных карточек
 .popular {
   margin-top: 48px;
 
@@ -152,17 +144,14 @@ section {
   max-width: 500px;
   flex: 1 1 400px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-
   &__slider {
     position: relative;
-
     img {
       border-radius: 18px;
       width: 100%;
       height: 356px;
     }
   }
-
   &__info {
     h3 {
       text-transform: uppercase;
@@ -172,7 +161,6 @@ section {
       margin-bottom: 15px;
       font-size: 19px;
     }
-
     .price {
       font-family: "GothamPro_regular", sans-serif;
       text-align: center;
@@ -180,7 +168,6 @@ section {
       margin-bottom: 70px;
     }
   }
-
   &__specs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -231,21 +218,18 @@ section {
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
-
   span {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
     cursor: pointer;
-
     &.active {
       background: var(--text);
     }
   }
 }
 
-// Стили для карточек автомобилей
 .card_car {
   width: 100%;
   height: 520px;
@@ -262,7 +246,6 @@ section {
   background-size: cover;
   background-position: center center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-
   &__overlay {
     position: absolute;
     top: 0;
@@ -271,7 +254,6 @@ section {
     height: 100%;
     backdrop-filter: blur(4px);
   }
-
   &__text {
     position: absolute;
     margin-left: 96px;
@@ -310,7 +292,6 @@ section {
   font-family: "GothamPro_black", sans-serif;
 }
 
-// Стили для характеристик
 .fleet__card-details {
   display: flex;
   flex-wrap: wrap;
@@ -336,7 +317,6 @@ section {
   color: rgba(151, 151, 151, 1);
 }
 
-// Стили для премиум секции
 .prem {
   margin-top: 95px;
   display: flex;
@@ -443,7 +423,6 @@ h1 {
   }
 }
 
-// Стили для плавающих кнопок
 .float-btn {
   position: fixed;
   bottom: 20px;
@@ -469,7 +448,6 @@ h1 {
   }
 }
 
-// Стили для модального окна
 .contact-modal {
   display: none;
   position: fixed;

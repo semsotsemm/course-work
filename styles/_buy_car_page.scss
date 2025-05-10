@@ -16,7 +16,6 @@
   src: url("../fonts/gothampro_bold.ttf") format("truetype");
 }
 
-// Переменные для цветов и других повторяющихся значений
 $bg-color: rgba(12, 12, 12, 0.96);
 $text-color: #fff;
 $accent-color: #00b731;
@@ -40,14 +39,12 @@ body {
   overflow-x: hidden;
 }
 
-// Стили для контейнера
 .container {
   width: $container-width;
   max-width: $max-container-width;
   margin: 0 auto;
 }
 
-// Стили для хедера
 .header {
   background: linear-gradient(
     135deg,
@@ -74,7 +71,6 @@ body {
   }
 }
 
-// Стили для логотипа и навигации
 .brand-logo {
   font-family: "GothamPro_black", sans-serif;
   font-size: 24px;
@@ -102,7 +98,6 @@ body {
   }
 }
 
-// Стили для страницы продукта
 .product-page {
   margin-top: 100px;
 
@@ -145,7 +140,6 @@ body {
   }
 }
 
-// Стили для панели кастомизации
 .customization-panel {
   border: 1px solid $border-color;
   border-radius: 20px;
@@ -298,7 +292,6 @@ body {
   }
 }
 
-// Стили для плавающих кнопок
 .floating-button {
   position: fixed;
   bottom: 20px;
@@ -322,7 +315,6 @@ body {
   }
 }
 
-// Стили для контактного модального окна
 .contact-modal {
   display: none;
   position: fixed;
@@ -371,7 +363,6 @@ body {
   }
 }
 
-// Стили для чекбоксов
 input[type="checkbox"] {
   appearance: none;
   width: 25px;
@@ -402,7 +393,6 @@ input[type="checkbox"] {
   font-size: 17px;
 }
 
-// Медиа-запросы
 @media (max-width: 1300px) {
   .header-container {
     justify-content: center;

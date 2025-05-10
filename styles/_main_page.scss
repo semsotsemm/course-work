@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-// Font faces
 @font-face {
   font-family: "GothamPro_black";
   src: url("../fonts/gothampro_black.ttf") format("truetype");
@@ -14,7 +13,6 @@
   src: url("../fonts/gothampro_bold.ttf") format("truetype");
 }
 
-// Global reset
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +125,6 @@ body {
   width: 100%;
   max-width: 450px;
   z-index: 1100;
-
   &__content {
     position: relative;
     padding: 30px;
@@ -140,7 +137,6 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     border-radius: 8px;
     text-align: center;
-
     .modal__close {
       position: absolute;
       top: 10px;
@@ -150,7 +146,6 @@ body {
       font-size: 20px;
       color: #ff0000;
       cursor: pointer;
-
       &:hover {
         color: #000;
       }
@@ -164,24 +159,20 @@ body {
   align-items: center;
   height: 483px;
   background: url("../img/porshe_main.jpg") center/cover no-repeat;
-
   &__content {
     margin-left: 56.7%;
     z-index: 1;
     color: #fff;
-
     & .hero__title {
       font-family: "GothamPro_black", sans-serif;
       font-size: 26px;
       text-transform: uppercase;
     }
-
     & .hero__subtitle {
       font-family: "GothamPro_regular", sans-serif;
       font-size: 12px;
       margin: 10px 0 25px;
     }
-
     & .hero__btn {
       display: inline-flex;
       align-items: center;
@@ -195,7 +186,6 @@ body {
       text-decoration: none;
       border-radius: 20px;
       transition: background 0.3s;
-
       &:hover {
         background: #0a0;
       }
@@ -340,7 +330,6 @@ body {
   }
 }
 
-// Media Queries
 @media (max-width: 1300px) {
   .header {
     .header-container {

@@ -1,4 +1,3 @@
-// Функция регистрации нового пользователя
 function register() {
   const username = document.getElementById("regUsername").value.trim();
   const password = document.getElementById("regPassword").value;
@@ -19,7 +18,6 @@ function register() {
   alert("Регистрация успешна!");
 }
 
-// Функция входа пользователя
 function login() {
   const username = document.getElementById("loginUsername").value.trim();
   const password = document.getElementById("loginPassword").value;
@@ -34,7 +32,6 @@ function login() {
     msg.textContent = "Вход выполнен успешно! Перенаправление...";
     msg.style.color = "lightgreen";
 
-    // Сохраняем имя пользователя в localStorage
     localStorage.setItem("currentUser", username);
     localStorage.setItem("currentPass", password);
 
@@ -47,7 +44,6 @@ function login() {
   }
 }
 
-// Анимация кнопок
 var animateButton = function (e) {
   e.preventDefault();
   e.target.classList.remove("animate");

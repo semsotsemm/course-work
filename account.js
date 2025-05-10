@@ -1,26 +1,20 @@
-// account.js
-
-// --- авторизация пользователя ---
 let username = localStorage.getItem("currentUser");
 if (!username) {
   window.location.href = "index.html";
 }
 
-// --- найти элементы формы ---
 const usernameInput = document.getElementById("usernameInput");
 const emailInput    = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
 const togglePwdBtn  = document.getElementById("togglePassword");
 const saveBtn       = document.getElementById("saveProfile");
 
-// --- заполняем поля из localStorage ---
 window.addEventListener("DOMContentLoaded", () => {
   usernameInput.value = localStorage.getItem("currentUser") || "";
   emailInput.value    = localStorage.getItem("currentEmail") || "";
   passwordInput.value = localStorage.getItem("currentPass")  || "";
 });
 
-// --- показать/скрыть пароль ---
 togglePwdBtn.addEventListener("click", () => {
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
@@ -31,29 +25,21 @@ togglePwdBtn.addEventListener("click", () => {
   }
 });
 
-// --- сохранить профиль ---
 saveBtn.addEventListener("click", () => {
   const newName  = usernameInput.value.trim();
   const newEmail = emailInput.value.trim();
   const newPass  = passwordInput.value;
-
   if (!newName) {
     alert("Имя не может быть пустым.");
     return;
   }
-
-  // сохраняем в localStorage
   localStorage.setItem("currentUser",  newName);
   localStorage.setItem("currentEmail", newEmail);
   localStorage.setItem("currentPass",  newPass);
-
-  // если имя изменилось, обновим переменную и, при необходимости, другие места
   username = newName;
-
   alert("Профиль сохранён.");
 });
 
-// --- рендер истории заказов ---
 (function renderOrderHistory() {
   const allOrders = JSON.parse(localStorage.getItem("orders") || "[]");
   const myOrders  = allOrders.filter(o => o.username === username);

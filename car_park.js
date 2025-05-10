@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Заполняем data-атрибуты
   cards.forEach((card) => {
     card.dataset.brand =
       card.querySelector(".car_name")?.textContent.trim() || "";
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     card.dataset.drive = attrs[3]?.textContent.trim() || "";
   });
 
-  // Селекторы фильтров
   const filters = {
     brand: document.getElementById("filter-brand"),
     price: document.getElementById("filter-price"),
@@ -62,13 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
       card.style.display = show ? "" : "none";
     });
   }
-
-  // Вешаем обработчики только на существующие селекты
   Object.values(filters).forEach((sel) => {
     if (sel) sel.addEventListener("change", applyFilter);
     else console.warn("Фильтр не найден:", sel);
   });
-
-  // И сразу применяем (чтобы не было «мигания»)
   applyFilter();
 });

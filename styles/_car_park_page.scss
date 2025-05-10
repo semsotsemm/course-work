@@ -132,7 +132,6 @@ p,
   }
 }
 
-// Стили для hero секции
 .hero {
   position: relative;
   display: flex;
@@ -180,7 +179,6 @@ p,
   }
 }
 
-// Стили для модального окна
 .modal {
   display: none;
   position: fixed;
@@ -230,7 +228,6 @@ p,
   }
 }
 
-// Стили для секции партнеров и предложений
 .partners__slider,
 .offers__slider {
   display: flex;
@@ -299,14 +296,12 @@ p,
   }
 }
 
-// Стили для секции о компании
 .about__text {
   font-size: 20px;
   line-height: 22px;
   margin-bottom: 20px;
 }
 
-// Стили для секции особенностей
 .features {
   margin-top: 41px;
 
@@ -339,7 +334,6 @@ p,
   }
 }
 
-// Стили для плавающих кнопок
 .float-btn {
   position: fixed;
   bottom: 20px;
@@ -368,7 +362,6 @@ p,
   }
 }
 
-// Стили для фильтров
 .filters {
   margin: 20px 0;
 
@@ -441,7 +434,6 @@ option {
   color: #000000;
 }
 
-// Стили для флита
 .fleet__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -507,7 +499,6 @@ option {
   color: rgba(151, 151, 151, 1);
 }
 
-// Стили для слайдера
 .slider-prev,
 .slider-next {
   position: absolute;
