@@ -1,0 +1,612 @@
+@charset "UTF-8";
+
+// Подключение шрифтов
+@font-face {
+  font-family: "GothamPro_black";
+  src: url("../fonts/gothampro_black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamPro_regular";
+  src: url("../fonts/gothampro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamPro_bold";
+  src: url("../fonts/gothampro_bold.ttf") format("truetype");
+}
+
+// Переменные
+$bg: #111;
+$card-bg: #222;
+$text: #fff;
+$accent: #6c63ff;
+$accent-hover: #4d3ff0;
+$accent-green: #00b731;
+$container-width: 90%;
+$max-container-width: 1200px;
+$shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+// Глобальные стили
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --bg: #{$bg};
+  --card-bg: #{$card-bg};
+  --text: #{$text};
+  --accent: #{$accent};
+  --accent-hover: #{$accent-hover};
+}
+
+body {
+  cursor: default;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+// Стили для контейнера
+.container {
+  width: $container-width;
+  max-width: $max-container-width;
+  margin: 0 auto;
+}
+
+// Стили для хедера
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.233),
+    rgba(0, 0, 0, 0.13)
+  );
+  backdrop-filter: blur(8px);
+  box-shadow: $shadow;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  left: 24.3%;
+  width: 49%;
+  z-index: 1000;
+
+  &-container {
+    width: 100%;
+    max-width: $max-container-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Стили для логотипа и навигации
+.logo,
+.brand-logo {
+  font-family: "GothamPro_black", sans-serif;
+  font-size: 24px;
+  color: $text;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+  a {
+    font-family: "GothamPro_regular", sans-serif;
+    font-size: 12px;
+    color: $text;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $accent-green;
+    }
+  }
+}
+
+// Стили для секций
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1180px;
+}
+
+// Стили для популярных карточек
+.popular {
+  margin-top: 48px;
+
+  &__title {
+    font-size: 26px;
+    font-family: "GothamPro_black", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 67px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__more {
+    font-family: "GothamPro_regular", sans-serif;
+    text-align: center;
+    margin-top: 27px;
+  }
+}
+
+.card {
+  width: 556px;
+  height: 627px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 500px;
+  flex: 1 1 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+  &__slider {
+    position: relative;
+
+    img {
+      border-radius: 18px;
+      width: 100%;
+      height: 356px;
+    }
+  }
+
+  &__info {
+    h3 {
+      text-transform: uppercase;
+      font-family: "GothamPro_regular", sans-serif;
+      text-align: center;
+      margin-top: 22px;
+      margin-bottom: 15px;
+      font-size: 19px;
+    }
+
+    .price {
+      font-family: "GothamPro_regular", sans-serif;
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__specs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    color: #aaa;
+    font-size: 0.85rem;
+  }
+}
+
+.spec {
+  text-align: center;
+
+  i {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    display: block;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+
+  &--left {
+    left: 10px;
+  }
+
+  &--right {
+    right: 10px;
+  }
+}
+
+.dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+
+  span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+
+    &.active {
+      background: var(--text);
+    }
+  }
+}
+
+// Стили для карточек автомобилей
+.card_car {
+  width: 100%;
+  height: 520px;
+}
+
+.car-card {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin-bottom: 26px;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 100%;
+    backdrop-filter: blur(4px);
+  }
+
+  &__text {
+    position: absolute;
+    margin-left: 96px;
+    margin-top: 189px;
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    color: $text;
+    font-size: 17px;
+
+    h3 {
+      margin: 0 0 1em;
+      font-size: 1.8rem;
+      line-height: 1.3;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+  }
+}
+
+.card_txt {
+  font-family: "GothamPro_regular", sans-serif;
+  font-size: 17px;
+}
+
+.card_txt_bold {
+  font-family: "GothamPro_black", sans-serif;
+}
+
+// Стили для характеристик
+.fleet__card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.characteristics_artibute,
+.title_artibute {
+  font-family: "GothamPro_regular", sans-serif;
+  font-size: 15px;
+}
+
+.title_artibute {
+  color: rgba(151, 151, 151, 1);
+}
+
+// Стили для премиум секции
+.prem {
+  margin-top: 95px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#first_image {
+  width: 69%;
+  height: 25.6%;
+  background-image: url(../img/image1.png);
+  margin-bottom: 21px;
+}
+
+#second_image {
+  width: 42%;
+  height: 47%;
+  background-image: url(../img/image2.png);
+  margin-bottom: 21px;
+  margin-right: 14px;
+}
+
+#third_image {
+  width: 55%;
+  height: 47%;
+  background-image: url(../img/image3.png);
+  margin-bottom: 21px;
+}
+
+#fourth_image {
+  width: 86%;
+  height: 25.6%;
+  background-image: url(../img/image4.png);
+}
+
+.text_ab {
+  margin-left: 116px;
+  width: 40%;
+}
+
+#text_about_main {
+  font-size: 30px;
+  font-family: "GothamPro_black", sans-serif;
+}
+
+#text_about_secondary {
+  font-size: 30px;
+  font-family: "GothamPro_regular", sans-serif;
+}
+
+#text_about_why {
+  display: block;
+  font-size: 18px;
+  margin-top: 26px;
+  font-family: "GothamPro_bold", sans-serif;
+  margin-bottom: 26px;
+}
+
+#text_about_why_text {
+  display: block;
+  font-size: 18px;
+  font-family: "GothamPro_regular", sans-serif;
+}
+
+.text_why {
+  font-family: "GothamPro_black", sans-serif;
+}
+
+#why {
+  text-align: left;
+  font-size: 12px;
+}
+
+#why_txt {
+  padding: 22px 63px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "GothamPro_black", sans-serif;
+}
+
+// Стили для кнопок
+.btn {
+  display: inline-block;
+  padding: 22px 29px;
+  box-shadow: 0 0 15px rgb(64, 45, 209);
+  background-color: rgba(76, 53, 250, 1);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+
+  &:hover {
+    background: var(--accent-hover);
+  }
+}
+
+// Стили для плавающих кнопок
+.float-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: $accent-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 6;
+
+  &--support {
+    background-image: url(../img/delivery.png);
+    left: 20px;
+  }
+
+  &--delivery {
+    background-image: url(../img/support.png);
+    right: 20px;
+  }
+}
+
+// Стили для модального окна
+.contact-modal {
+  display: none;
+  position: fixed;
+  top: -3px;
+  right: 0;
+  width: 50%;
+  bottom: 0;
+  margin-top: 40px;
+  font-size: 80%;
+  z-index: 10;
+  height: 120px;
+  justify-content: flex-end;
+  text-shadow: 0px 0px 4px $text;
+
+  &__content {
+    font-family: "GothamPro_regular", sans-serif;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.534),
+      rgba(22, 22, 22, 0.753)
+    );
+    backdrop-filter: blur(8px);
+    box-shadow: $shadow;
+    color: $text;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff0000;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+// Медиа-запросы
+@media (max-width: 1300px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+
+    &.show {
+      display: flex;
+    }
+  }
+
+  .contact-modal {
+    font-size: 70%;
+    width: 100%;
+  }
+
+  .prem {
+    width: 100%;
+  }
+
+  #text_about_why_text {
+    font-size: 10px;
+  }
+
+  .images {
+    width: 50%;
+    height: 688px;
+  }
+
+  .text_ab {
+    width: 40%;
+    margin-left: 10%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .popular__list {
+    flex-direction: column;
+    align-items: center;
+    height: 1400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-card {
+    height: auto;
+    aspect-ratio: 2 / 1;
+
+    &__overlay,
+    &__text {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      backdrop-filter: none;
+      background: rgba(0, 0, 0, 0.6);
+      -webkit-backdrop-filter: none;
+    }
+
+    &__text {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 484px) {
+  .contact-modal {
+    font-size: 70%;
+    width: 100%;
+    height: 150px;
+  }
+}

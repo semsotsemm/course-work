@@ -1,0 +1,248 @@
+[
+  {
+    "id": "audi-tts",
+    "brand": "AUDI TTS",
+    "img": "img/audi_tts.png",
+    "priceMin": 62900,
+    "priceMax": 70100,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "98 БЕНЗИН",
+    "power": 315,
+    "drive": "ПЕРЕДНИЙ",
+    "description": "Audi TTS – Компактный спортивный автомобиль, сочетающий элегантность и дерзость. Динамичный турбированный двигатель и полный привод Quattro обеспечивают стремительные ускорения и точность управления.",
+    "configurations": [
+      { "name": "Base", "price": 62900 },
+      { "name": "Premium", "price": 67600 },
+      { "name": "Sport", "price": 69100 }
+    ],
+    "bodyColors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Red", "hex": "#FF0000" },
+      { "name": "White", "hex": "#FFFFFF" }
+    ],
+    "interiorColors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Beige", "hex": "#F5F5DC" }
+    ],
+    "wheels": [
+      { "name": "Sport Classic", "img": "img/wheel1.png", "price": 2000 },
+      { "name": "Blade", "img": "img/wheel2.png", "price": 2000 }
+    ],
+    "options": [
+      { "name": "Панорамная крыша", "price": 10000 },
+      { "name": "Система Burmester", "price": 5000 }
+    ]
+  },
+  {
+    "id": "bmw-m4",
+    "brand": "BMW M4",
+    "img": "img/bmw_m4.png",
+    "priceMin": 79100,
+    "priceMax": 92300,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "98 БЕНЗИН",
+    "power": 503,
+    "drive": "ПОЛНЫЙ",
+    "description": "BMW M4 – Символ страсти к скорости. Мощный, агрессивный, с идеальной балансировкой и ревущим рядным шестицилиндровым мотором – настоящая мечта энтузиаста.",
+    "configurations": [
+      { "name": "Base", "price": 76600 },
+      { "name": "Competition", "price": 82900 }
+    ],
+    "bodyColors": [
+      { "name": "Blue", "hex": "#0000FF" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "interiorColors": [
+      { "name": "Red", "hex": "#8B0000" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "wheels": [{ "name": "M Light", "img": "img/wheel3.png", "price": 2500 }],
+    "options": [
+      { "name": "Проекционный дисплей", "price": 1500 },
+      { "name": "Карбоновые сиденья", "price": 4000 }
+    ]
+  },
+  {
+    "id": "mercedes-eqs",
+    "brand": "Mercedes-Benz EQS",
+    "img": "img/mercedes_eqs.png",
+    "priceMin": 105550,
+    "priceMax": 147550,
+    "engine": "ЭЛЕКТРИЧЕСКИЙ",
+    "fuel": "ЭЛЕКТРО",
+    "power": 516,
+    "drive": "ПОЛНЫЙ",
+    "description": "Mercedes-Benz EQS – Электрический флагман роскоши. Передовые технологии, невероятный комфорт и футуристичный дизайн делают его идеальным представителем нового поколения элитных авто.",
+    "configurations": [
+      { "name": "EQS 450+", "price": 104050 },
+      { "name": "EQS 580 4MATIC", "price": 130050 }
+    ],
+    "bodyColors": [
+      { "name": "Silver", "hex": "#C0C0C0" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "interiorColors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Gray", "hex": "#D3D3D3" }
+    ],
+    "wheels": [{ "name": "Aero", "img": "img/wheel4.png", "price": 1500 }],
+    "options": [
+      { "name": "Hyperscreen", "price": 8000 },
+      { "name": "Массаж сидений", "price": 2000 }
+    ]
+  },
+  {
+    "id": "tesla-model-s",
+    "brand": "Tesla Model S",
+    "img": "img/tesla_model_s.png",
+    "priceMin": 74630,
+    "priceMax": 94630,
+    "engine": "ЭЛЕКТРИЧЕСКИЙ",
+    "fuel": "ЭЛЕКТРО",
+    "power": 1020,
+    "drive": "ПОЛНЫЙ",
+    "description": "Tesla Model S – Прорыв в мире электромобилей. Космическое ускорение, футуристические технологии и передовая автономность – Tesla меняет представление о скорости и инновациях.",
+    "configurations": [
+      { "name": "Long Range", "price": 74630 },
+      { "name": "Plaid", "price": 81200 }
+    ],
+    "bodyColors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Midnight Silver", "hex": "#555555" }
+    ],
+    "interiorColors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "wheels": [
+      { "name": "Tempest", "img": "img/wheel5.png", "price": 0 },
+      { "name": "Arachnid", "img": "img/wheel6.png", "price": 4500 }
+    ],
+    "options": [{ "name": "Полный автопилот", "price": 7500 }]
+  },
+  {
+    "id": "nissan-skyline-r34",
+    "brand": "Nissan Skyline R34",
+    "img": "img/skyline_r34.png",
+    "priceMin": 120310,
+    "priceMax": 180920,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "95 БЕНЗИН",
+    "power": 280,
+    "drive": "ПОЛНЫЙ",
+    "description": "Nissan Skyline R34 – Легенда JDM-культуры. Турбированный шестицилиндровый мотор, интеллектуальный полный привод и культовый дизайн делают его иконой среди автолюбителей.",
+    "configurations": [{ "name": "GT-R", "price": 120310 }],
+    "bodyColors": [
+      { "name": "Blue", "hex": "#1E90FF" },
+      { "name": "Silver", "hex": "#C0C0C0" }
+    ],
+    "interiorColors": [{ "name": "Black", "hex": "#000000" }],
+    "wheels": [{ "name": "OEM", "img": "img/wheel7.png", "price": 0 }],
+    "options": [{ "name": "Доп. охлаждение", "price": 1500 }]
+  },
+  {
+    "id": "toyota-supra",
+    "brand": "Toyota Supra",
+    "img": "img/toyota_supra.png",
+    "priceMin": 56250,
+    "priceMax": 65100,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "98 БЕНЗИН",
+    "power": 382,
+    "drive": "ЗАДНИЙ",
+    "description": "Toyota Supra – Искра японского спорткара. Идеальный баланс мощности, точности и харизмы, покоряющий трассы и сердца фанатов.",
+    "configurations": [
+      { "name": "2.0", "price": 56250 },
+      { "name": "3.0 Premium", "price": 60250 }
+    ],
+    "bodyColors": [
+      { "name": "Red", "hex": "#FF0000" },
+      { "name": "White", "hex": "#FFFFFF" }
+    ],
+    "interiorColors": [{ "name": "Black", "hex": "#000000" }],
+    "wheels": [{ "name": "Sport", "img": "img/wheel8.png", "price": 1500 }],
+    "options": [{ "name": "Аудиосистема JBL", "price": 1200 }]
+  },
+  {
+    "id": "porsche-911-gt3-rs",
+    "brand": "Porsche 911 GT3 RS",
+    "img": "img/porsche_911.png",
+    "priceMin": 190000,
+    "priceMax": 208000,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "98 БЕНЗИН",
+    "power": 525,
+    "drive": "ЗАДНИЙ",
+    "description": "Porsche 911 GT3 RS — трековый суперкар с атмосферным мотором и карбоновыми элементами. Один из самых быстрых автомобилей на Нюрбургринге.",
+    "configurations": [
+      { "name": "Standard", "price": 186000 },
+      { "name": "Weissach Package", "price": 200000 }
+    ],
+    "bodyColors": [
+      { "name": "Green", "hex": "#00FF00" },
+      { "name": "Gray", "hex": "#888888" }
+    ],
+    "interiorColors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Red", "hex": "#8B0000" }
+    ],
+    "wheels": [
+      { "name": "RS Center Lock", "img": "img/wheel9.png", "price": 4000 }
+    ],
+    "options": [{ "name": "Карбоновые зеркала", "price": 2000 }]
+  },
+  {
+    "id": "mercedes-g-class",
+    "brand": "Mercedes-Benz G-Class",
+    "img": "img/mercedes_g_class.png",
+    "priceMin": 143000,
+    "priceMax": 183000,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "98 БЕНЗИН",
+    "power": 577,
+    "drive": "ПОЛНЫЙ",
+    "description": "Mercedes-Benz G-Class – Внедорожная икона. Брутальный стиль, непревзойденная проходимость и люксовый комфорт – этот авто не признает границ.",
+    "configurations": [
+      { "name": "G 500", "price": 140000 },
+      { "name": "AMG G 63", "price": 166000 }
+    ],
+    "bodyColors": [
+      { "name": "Black", "hex": "#000000" },
+      { "name": "Olive Green", "hex": "#556B2F" }
+    ],
+    "interiorColors": [
+      { "name": "Beige", "hex": "#F5F5DC" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "wheels": [{ "name": "AMG 22\"", "img": "img/wheel10.png", "price": 3000 }],
+    "options": [{ "name": "Night Package", "price": 2500 }]
+  },
+  {
+    "id": "mercedes-s-class",
+    "brand": "Mercedes-Benz S-Class",
+    "img": "img/mercedes_s_class.png",
+    "priceMin": 115650,
+    "priceMax": 150350,
+    "engine": "БЕНЗИНОВЫЙ",
+    "fuel": "95 БЕНЗИН",
+    "power": 496,
+    "drive": "ПОЛНЫЙ",
+    "description": "Mercedes-Benz S-Class – Воплощение роскоши. Исключительный комфорт, инновационные технологии и бесшумное скольжение по дороге делают его эталоном премиального класса.",
+    "configurations": [
+      { "name": "S 500 4MATIC", "price": 113650 },
+      { "name": "S 580 4MATIC", "price": 126100 }
+    ],
+    "bodyColors": [
+      { "name": "Silver", "hex": "#C0C0C0" },
+      { "name": "Black", "hex": "#000000" }
+    ],
+    "interiorColors": [
+      { "name": "White", "hex": "#FFFFFF" },
+      { "name": "Brown", "hex": "#8B4513" }
+    ],
+    "wheels": [
+      { "name": "Luxury 21\"", "img": "img/wheel11.png", "price": 2000 }
+    ],
+    "options": [{ "name": "Пакет заднего комфорта", "price": 4000 }]
+  }
+]

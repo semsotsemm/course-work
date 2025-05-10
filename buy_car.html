@@ -1,0 +1,113 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AUTO SPACE - Porsche 911</title>
+      <link rel="stylesheet" href="styles/buy_car.css" />
+    </head>
+    <body>
+      <header class="header">
+        <div class="container header-container">
+          <a href="#" class="brand-logo">AUTOSPACE</a>
+          <nav>
+            <ul class="nav-list" id="nav-list">
+            <li><a href="car_park.html">АВТОПАРК</a></li>
+            <li><a href="stock.html">АКЦИИ</a></li>
+            <li><a href="main.html">ЗАКАЗАТЬ АВТО</a></li>
+            <li><a id="contacts-link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="contacts-modal" class="contact-modal">
+          <div class="contact-modal__content">
+            <button class="modal__close">&times;</button>
+            <h2>Контакты</h2>
+            <p>Телефон: +375 (44) 532‑15‑33</p>
+            <p>Email: info@autospace.ru</p>
+            <p>Адрес: г. Минск, ул. Белорусская</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="product-page">
+        <div class="container">
+          <div class="product-page__content">
+            <div class="product-page__image">
+              <img id="product-image" src="" alt="" />
+            </div>
+            <div class="product-page__details">
+              <h1 id="product-title" class="product-page__title"></h1>
+              <span id="product-price" class="product-page__price"></span>
+              <p id="product-description" class="product-page__description"></p>
+
+              <div class="customization-panel">
+                <div class="customization-section">
+                  <h3>Комплектации</h3>
+                  <div id="configurations" class="trim-options"></div>
+                </div>
+                <div class="customization-section">
+                  <h3>Цвет кузова</h3>
+                  <div id="body-colors" class="exterior-color-options"></div>
+                </div>
+                <div class="customization-section">
+                  <h3>Цвет интерьера</h3>
+                  <div id="interior-colors" class="interior-color-options"></div>
+                </div>
+                <div class="customization-section">
+                  <h3>Диски</h3>
+                  <div id="wheels" class="wheel-options"></div>
+                </div>
+                <div class="customization-section">
+                  <h3>Дополнительные опции</h3>
+                  <form id="options-form"></form>
+                </div>
+
+                <svg width="95%" height="1">
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="100%"
+                    y2="0"
+                    stroke="#717171"
+                    stroke-width="1"
+                  />
+                </svg>
+
+                <div id="pricing-summary">
+                  <div class="pricing-line">
+                    <span>Стоимость автомобиля</span>
+                    <span id="product-price1"></span>
+                  </div>
+                  <div class="pricing-line">
+                    <span>Стоимость дополнительных опций</span>
+                    <span id="add-price"></span>
+                  </div>
+                  <div class="pricing-line">
+                    <span>Итоговая стоимость</span>
+                    <span id="full-price"></span>
+                  </div>
+                </div>
+
+                <div class="purchase-buttons">
+                  <button class="btn btn--add">Добавить в корзину</button>
+                  <button class="btn btn--buy">Купить сейчас</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <a
+          href="basket.html"
+          class="floating-button floating-button--support"
+        ></a>
+        <a href="account.html" class="floating-button floating-button--delivery"></a>
+      </footer>
+
+      <script src="buy_car.js"></script>
+      <script src="stock.js"></script>
+    </body>
+  </html>

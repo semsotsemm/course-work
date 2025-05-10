@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles/basket.css" />
+  </head>
+  <body>
+    <main>
+    <img src="img/gt3.jpg" alt="">
+    <header class="header">
+      <div class="container1 header__inner">
+        <a href="#" class="brand-logo">AUTOSPACE</a>
+        <nav class="nav">
+          <ul class="nav__list" id="nav-list">
+            <li><a href="car_park.html">АВТОПАРК</a></li>
+            <li><a href="stock.html">АКЦИИ</a></li>
+            <li><a href="main.html">ЗАКАЗАТЬ АВТО</a></li>
+            <li><a id="contacts-link">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    </main>
+    <div id="contacts-modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__close">&times;</button>
+        <h2>Контакты</h2>
+        <p>Телефон: +375 (44) 532‑15‑33</p>
+        <p>Email: info@autospace.ru</p>
+        <p>Адрес: г. Минск, ул. Белорусская</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="order_history">
+        <h2>Корзина</h2>
+
+        <div id="order-list"></div>
+      </div>
+    </div>
+    <a href="basket.html" class="float-btn float-btn--support">
+    </a>
+    <a href="account.html" class="float-btn float-btn--delivery">
+    </a>
+    <script src="basket.js"></script>
+    <script src="stock.js"></script>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTO SPACE - Fleet</title>
+    <link rel="stylesheet" href="styles/car_park.css" />
+  </head>
+  <body>
+    <section id="main_image" class="hero">
+      <div class="hero__overlay"></div>
+      <header class="header">
+        <div class="container1 header__inner">
+          <a href="#" class="brand-logo">AUTOSPACE</a>
+          <nav class="nav">
+            <ul class="nav__list" id="nav-list">
+              <li><a href="car_park.html">АВТОПАРК</a></li>
+              <li><a href="stock.html">АКЦИИ</a></li>
+              <li><a href="main.html">ЗАКАЗАТЬ АВТО</a></li>
+              <li><a id="contacts-link">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="contacts-modal" class="modal">
+        <div class="modal__content">
+          <button class="modal__close">&times;</button>
+          <h2>Контакты</h2>
+          <p>Телефон: +375 (44) 532‑15‑33</p>
+          <p>Email: info@autospace.ru</p>
+          <p>Адрес: г. Минск, ул. Белорусская</p>
+        </div>
+      </div>
+    </section>
+    <section class="filters">
+      <div class="container1">
+        <div class="filters__controls">
+          <div class="filter-control">
+            <select id="filter-brand">
+              <option value="">Марка</option>
+              <option value="AUDI TTS">Audi </option>
+              <option value="BMW M4">BMW </option>
+              <option value="MERCEDES-BENZ EQS" value="MERCEDES-BENZ G-CLASS">Mercedes-Benz</option>
+              <option value="TESLA MODEL S">Tesla</option>
+              <option value="NISSAN SKYLINE R34">Nissan </option>
+              <option value="TOYOTA SUPRA">Toyota </option>
+              <option value="POESCHE 911 GT3 RS">Porsche</option>
+            </select>
+          </div>
+          <div class="filter-control">
+            <select id="filter-price">
+              <option value="">Цена</option>
+              <option value="0-60000">До 60 000</option>
+              <option value="60000-90000">60 000–90 000</option>
+              <option value="90000-130000">90 000–130 000</option>
+              <option value="130000-200000">130 000–200 000</option>
+            </select>
+          </div>
+          <div class="filter-control">
+            <select id="filter-engine">
+              <option value="">Тип двигателя</option>
+              <option value="БЕНЗИНОВЫЙ">Бензиновый</option>
+              <option value="ЭЛЕКТРИЧ.">Электрический</option>
+              <option value="ГИБРИД">Гибрид</option>
+            </select>
+          </div>
+          <div class="filter-control">
+            <select id="filter-fuel">
+              <option value="">Тип топлива</option>
+              <option value="98 БЕНЗИН">98 бензин</option>
+              <option value="ЭЛЕКТРИЧЕСТВО">Электричество</option>
+            </select>
+          </div>
+          <div class="filter-control">
+            <select id="filter-power">
+              <option value="">Мощность (л.с.)</option>
+              <option value="0-300">До 300</option>
+              <option value="300-400">300–400</option>
+              <option value="400-600">400–600</option>
+              <option value="600-800">600–800</option>
+            </select>
+          </div>
+          <!-- Привод -->
+          <div class="filter-control">
+            <select id="filter-drive">
+              <option value="">Привод</option>
+              <option value="ПЕРЕДНИЙ">Передний (FWD)</option>
+              <option value="ЗАДНИЙ(RWD)">Задний (RWD)</option>
+              <option value="ПОЛНЫЙ(AWD)">Полный (AWD)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet">
+      <div class="container1">
+        <div class="fleet__grid">
+          <div class="fleet__card" data-id="audi-tts">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/audi_tts.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">AUDI TTS</h3>
+              <span class="price">62 900 – 70 100$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">315 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПЕРЕДНИЙ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="bmw-m4">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/bmw_m4.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">BMW M4</h3>
+              <span class="price">79 100 – 92 300$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">477 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛНЫЙ(AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="mercedes-eqs">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/Mercedes-Benz_EQS.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">MERCEDES-BENZ EQS</h3>
+              <span class="price">105 550 – 147 550$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">ЭЛЕКТРИЧ.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">ЭЛЕКТРИЧЕСТВО</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">423 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ЗАДНИЙ(RWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="tesla-model-s">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/tesla_model_s.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">TESLA MODEL S</h3>
+              <span class="price">74 630 – 94 630$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">ЭЛЕКТРИЧ.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">ЭЛЕКТРИЧЕСТВО</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">720 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛНЫЙ (AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="nissan-skyline-r34">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/nissan_skyline_r34.png"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">NISSAN SKYLINE R34</h3>
+              <span class="price">120 310 – 180 920$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">315 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛНЫЙ(AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="toyota-supra">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/toyota_supra.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">TOYOTA SUPRA</h3>
+              <span class="price">56 250 – 65 100$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">562 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛЫНЙ (AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="porsche-911-gt3-rs">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/porche911.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">PORSCHE 911 GT3 RS</h3>
+              <span class="price">190 000 – 208 000$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">518 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ЗАДНИЙ (RWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="mercedes-g-class">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/Mercedes-Benz_G-Class .jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">MERCEDES-BENZ G-CLASS</h3>
+              <span class="price">143 000 – 183 000$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">БЕНЗИНОВЫЙ</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">482 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛНЫЙ(AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fleet__card" data-id="mercedes-s-class">
+            <div class="fleet__card-slider">
+              <div class="fleet__card-image">
+                <img
+                  src="img/Mercedes-Benz_S-Class.jpg"
+                  alt="Audi TTS"
+                  style="height: 243px"
+                />
+              </div>
+            </div>
+            <div class="fleet__card-info">
+              <h3 class="car_name">MERCEDES-BENZ S-CLASS</h3>
+              <span class="price">115 650 – 150 350$</span>
+              <div class="fleet__card-details">
+                <div class="detail-item">
+                  <img
+                    src="img/icon-engine.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ДВИГАТЕЛЬ</span>
+                  <span class="characteristics_artibute">ГИБРИД</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-fuel.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ТИП ТОПЛИВА</span>
+                  <span class="characteristics_artibute">98 БЕНЗИН</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-power.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">МОЩНОСТЬ</span>
+                  <span class="characteristics_artibute">498 Л.С.</span>
+                </div>
+                <div class="detail-item">
+                  <img
+                    src="img/icon-drive.svg"
+                    alt="Engine"
+                    style="width: 38px; height: 26px"
+                  />
+                  <span class="title_artibute">ПРИВОД</span>
+                  <span class="characteristics_artibute">ПОЛНЫЙ (AWD)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+    <a href="basket.html" class="float-btn float-btn--support">
+    </a>
+    <a href="account.html" class="float-btn float-btn--delivery">
+    </a>
+    </footer>
+    <script src="car_park.js"></script>
+    <script src="card_detail.js"></script>
+    <script src="stock.js"></script>
+  </body>
+</html>

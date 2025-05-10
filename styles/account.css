@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "GothamPro_black";
+  src: url("../fonts/gothampro_black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamPro_regular";
+  src: url("../fonts/gothampro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamPro_bold";
+  src: url("../fonts/gothampro_bold.ttf") format("truetype");
+}
+
+.order-item p {
+  font-family: "GothamPro_regular";
+  font-size: 18px;
+}
+
+input{
+  background: none;
+  border: none;
+  color: white;
+}
+
+.aboutCar{
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#saveProfile{
+  background: rgb(76, 53, 250);
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 190px;
+  height: 34px;
+  border: none;
+  border-radius: 13px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#togglePassword img{
+  position: relative;
+  top: 6px;
+  filter: invert(100%);
+  width: 25px;
+  height: 25px;
+}
+
+#passwordDisplay{
+    width: 130px;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+}
+
+#togglePassword {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+}
+
+.order-item h3 {
+  font-size: 24px;
+  font-family: "GothamPro_black";
+}
+
+#usernameDisplay {
+  font-family: "GothamPro_regular";
+}
+
+.container h2 {
+  font-family: "GothamPro_black";
+}
+
+body {
+  cursor: default;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  background-image: url(../img/bg_porcshe.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.order-item {
+  display: flex;
+  border-bottom: 2px solid white;
+}
+
+.float-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #00b731;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+.float-btn--support {
+  background-image: url("../img/delivery.png");
+  left: 20px;
+}
+.float-btn--delivery {
+  background-image: url("../img/support.png");
+  right: 20px;
+}
+
+.order_history {
+  width: 100%;
+}
+
+.float-btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 40px;
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+}
+
+.header {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.233),
+    rgba(0, 0, 0, 0.13)
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  left: 24.3%;
+  width: 49%;
+  z-index: 1000;
+}
+.header__inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .order-item {
+    display: flex;
+    flex-direction: column;
+  }
+  #contacts-modal {
+    margin-left: -14%;
+    font-size: 60%;
+    height: 130px;
+  }
+  .header__inner {
+    justify-content: center !important;
+  }
+
+  .brand-logo {
+    margin: 0;
+  }
+  #nav-list {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  #nav-list.show {
+    display: flex;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: -3px;
+  left: 40%;
+  right: 0;
+  width: 50%;
+  bottom: 0;
+  height: 150px;
+  margin-top: 40px;
+  font-size: 80%;
+  justify-content: center;
+  z-index: 10;
+  text-shadow: 0px 0px 4px #fff;
+}
+.modal__content {
+  font-family: "GothamPro_regular", sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff0000;
+}
+.modal__close:hover {
+  color: #000;
+}
+
+@media (max-width: 320px) {
+  .header__inner {
+    padding: 5px;
+  }
+  .brand-logo {
+    font-size: 18px;
+  }
+}
+
+.container1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "GothamPro_black", sans-serif;
+}
+
+.nav__list {
+    font-family: "GothamPro_regular", sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.nav__list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav__list a:hover {
+  color: #00b731;
+}

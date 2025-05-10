@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="styles/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="font-size: 34px">AUTOSPACE</h2>
+      <div class="form-section">
+        <h2>Registration</h2>
+        <input type="text" id="regUsername" placeholder="Username" />
+        <input type="password" id="regPassword" placeholder="Password" />
+        <button class="bubbly-button" onclick="register()">
+          Зарегистрироваться
+        </button>
+      </div>
+      <div class="form-section">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button class="bubbly-button" onclick="login()">Войти</button>
+      </div>
+      <p id="message"></p>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>
