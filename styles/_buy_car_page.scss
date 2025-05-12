@@ -421,6 +421,23 @@ input[type="checkbox"] {
   }
 }
 
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+    color:blue;
+    text-shadow: 0 0 5px #574ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (max-width: 768px) {
   .floating-button {
     width: 40px;

@@ -37,13 +37,9 @@ body {
 }
 
 .header {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.233),
-    rgba(0, 0, 0, 0.13)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.13));
   -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding-bottom: 10px;
   padding-left: 40px;
@@ -229,7 +225,7 @@ section {
   width: 480px;
   height: 100%;
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .car-card__text {
   position: absolute;
@@ -433,13 +429,9 @@ h1 {
 }
 .contact-modal__content {
   font-family: "GothamPro_regular", sans-serif;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.534),
-    rgba(22, 22, 22, 0.753)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.534), rgba(22, 22, 22, 0.753));
   -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   color: #fff;
   padding: 30px;
@@ -465,12 +457,6 @@ h1 {
 }
 
 @media (max-width: 1300px) {
-  .prem {
-    height: 700px;
-  }
-  .popular__title {
-    margin-left: 5%;
-  }
   .header-container {
     justify-content: center;
   }
@@ -493,25 +479,50 @@ h1 {
     font-size: 70%;
     width: 100%;
   }
+  .prem {
+    width: 100%;
+  }
   #text_about_why_text {
-    font-size: 18px;
+    font-size: 10px;
+  }
+  .images {
+    width: 50%;
+    height: 688px;
   }
   .text_ab {
+    width: 40%;
     margin-left: 10%;
+  }
+  section {
+    width: 100%;
   }
   .card {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 900px) {
-  .popular__title {
-    text-align: center;
-  }
   .popular__list {
     flex-direction: column;
     align-items: center;
     height: 1400px;
+  }
+}
+@media (max-width: 768px) {
+  .car-card {
+    height: auto;
+    aspect-ratio: 2/1;
+  }
+  .car-card__overlay, .car-card__text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: none;
+  }
+  .car-card__text {
+    padding: 20px;
   }
 }
 @media (max-width: 484px) {
@@ -520,4 +531,4 @@ h1 {
     width: 100%;
     height: 150px;
   }
-} /*# sourceMappingURL=stock.css.map */
+}/*# sourceMappingURL=stock.css.map */
